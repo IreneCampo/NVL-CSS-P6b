@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   
+     <title>Práctica selectores (II)</title>
+ 
+<style>
+
+div > p{ 
+              border: 2px solid #fabada; 
+}
+.importante+ p{ 
+                            color: red;
+}
+</style>
+
+ </head>
+ 
+<body>
+
+<h1>Vamos a practicar con los distintos tipos de selectores:</h1>
+
+<p> Este párrafo está fuera del div, por tanto no se ve afectado por los estilos.</p>
+
+<br>
+ 
+<div>
+ 
+<p class="importante">Este párrafo tiene clase importante y lleva un borde en color #fabada porque es hijo directo de div.</p>
+<p> Este otro es también hijo directo de div por ello el borde en color  #fabada. También lleva el texto en rojo porque es adyacente a un párrafo con clase importante.</p>
+<p>Este párrafo es hijo directo de div, pero el texto no es rojo porque no es adyacente a un párrafo con clase importante. Sin embargo, al ser hijo directo de div, sí que lleva borde en color #fabada.</p>
+
+</div>
+ 
+</body>
+</html>
